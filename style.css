@@ -799,7 +799,7 @@ textarea:focus {
     font-size: 25px;
     line-height: 42px;
     color: #131313;
-    padding: 19px 0;
+    padding: 11px 0;
 }
 
 .thumbnails_1 {
@@ -964,6 +964,18 @@ p .price_val {
 }
 
 /*-- /Section 5 --*/
+
+/*-- Section 6 --*/
+
+#map {
+    height: 635px;
+}
+
+p.p_red {
+    color: #ff2424;
+}
+
+/*-- /Section 6 --*/
 
 /*-- Section 7 --*/
 
