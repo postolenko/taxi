@@ -12,6 +12,20 @@
 
 /*-- /Section 3 --*/
 
+/*-- Section 4 --*/
+
+.two_cols p {
+    font-size: 20px;
+    line-height: 29px;
+}
+
+p .price_val {
+    margin-right: 16px;
+    font-size: 47px;
+}
+
+/*-- /Section 4 --*/
+
 /*-- Section 11 --*/
 
 .slider_3_wrapp::before {
@@ -140,20 +154,6 @@ ul li::before {
 }
 
 /*-- /Section 2 --*/
-
-/*-- Section 4 --*/
-
-.two_cols p {
-    font-size: 20px;
-    line-height: 29px;
-}
-
-p .price_val {
-    margin-right: 16px;
-    font-size: 47px;
-}
-
-/*-- /Section 4 --*/
 
 /*-- Section 7 --*/
 
@@ -815,6 +815,11 @@ h2 {
 
 	.two_cols {
 	    margin: 8px 0;
+	    align-items: center;
+	}
+
+	.two_cols > div:nth-child(1) {
+	    padding: 1px 10px 10px 0;
 	}
 
 	.two_cols p {
@@ -823,7 +828,7 @@ h2 {
 	}
 
 	p .price_val {
-	    font-size: 35px;
+	    font-size: 28px;
 	}
 
 	/*-- /Section 4 --*/
