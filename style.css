@@ -404,7 +404,7 @@ textarea:focus {
     vertical-align: top;
     cursor: pointer;
     padding: 9px;
-    line-height: 0;
+    line-height: 0 !important;
 }
 
 .slick-dots li:before {
@@ -655,6 +655,26 @@ textarea:focus {
     color: #ffffff;
 }
 
+.resp_call {
+    /*display: block;*/
+    display: none;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: transparent;
+}
+
+.phore_red {
+    display: inline-block;
+    vertical-align: top;
+    width: 28px;
+    height: 28px;
+    background-image: url(img/tell.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
@@ -729,6 +749,36 @@ textarea:focus {
     margin: 124px 0 20px 0;
 }
 
+.resp_slider {
+    display: none !important;
+    margin-top: 108px;
+}
+
+.resp_slider .slide {
+    text-align: center;
+}
+
+.resp_slider .slide p {
+    padding: 7px 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.resp_slider .slick-dots {
+    margin: 23px 0;
+}
+
+.resp_slider .slick-dots li button {
+    background-color: #c8cdd6;
+    opacity: .4;
+}
+
+.resp_slider .slick-dots li.slick-active button {
+    opacity: 1;
+}
+
 /*-- /Section 1 --*/
 
 /*-- Section 2 --*/
@@ -746,19 +796,21 @@ textarea:focus {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    align-items: center;
-    -webkit-align-items: center;
+    /*align-items: center;*/
+    /*-webkit-align-items: center;*/
     margin: 30px 0;
 }
 
 .article .left {
     width: 50%;
     padding: 15px 15px 15px 0;
+    order: 1;
 }
 
 .article .right {
     width: 50%;
     padding: 15px 0 15px 15px;
+    order: 2;
 }
 
 .article h3 {
@@ -794,6 +846,12 @@ textarea:focus {
     position: absolute;
     bottom: 23px;
     left: -30px;
+    z-index: 2;
+}
+
+.article_img .img_box {
+    overflow: hidden;
+    position: relative;
 }
 
 .article .img_box img {
