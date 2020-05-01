@@ -1954,7 +1954,7 @@ body.fixed {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .7);
     z-index: 4;
 }
 
@@ -1976,11 +1976,16 @@ body.fixed {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #354258;
     margin: 50px auto 20px auto;
-    padding: 50px 20px 30px 20px;
+    padding: 50px 20px;
     position: relative;
     z-index: 2;
+}
+
+.popup_content h3 {
+    text-align: center;
+    color: #ffffff;
 }
 
 .popup_content .close_popup {

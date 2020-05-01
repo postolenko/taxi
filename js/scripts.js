@@ -191,22 +191,22 @@ $(document).ready(function() {
       }
     });
     $(document).on("mouseup", function(e) {
-    if($(".popup").is(":visible")) {
-      e.preventDefault();
-      hide_element = $(".popup_content");
-      if (!hide_element.is(e.target)
-          && hide_element.has(e.target).length === 0) {
-          curTop = $("body").css("top");
-          curTop = Math.abs(parseInt(curTop, 10));
-          $("body").attr("style", "");
-          if (curTop !== 0) {
-              $("html").scrollTop(curTop);
+        if($(".popup").is(":visible")) {
+          e.preventDefault();
+          hide_element = $(".popup_content");
+          if (!hide_element.is(e.target)
+              && hide_element.has(e.target).length === 0) {
+              curTop = $("body").css("top");
+              curTop = Math.abs(parseInt(curTop, 10));
+              $("body").attr("style", "");
+              if (curTop !== 0) {
+                  $("html").scrollTop(curTop);
+              }
+              $("body").removeClass("fixed");
+              $(".popup_bg").fadeOut(300);
+              $("[data-popup]").fadeOut(300);
           }
-          $("body").removeClass("fixed");
-          $(".popup_bg").fadeOut(300);
-          $("[data-popup]").fadeOut(300);
-      }
-    }
+        }
     });
 
 });
