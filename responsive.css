@@ -94,10 +94,10 @@ p .price_val {
 .logo p {
     font-size: 15px;
 }
-
+/*
 .inline_blocks > div {
     padding: 5px 15px;
-}
+}*/
 
 /*-- /Header --*/
 
@@ -334,14 +334,14 @@ h2 {
 	    width: 40px;
 	}
 
-	.inline_blocks {
+	.tel_link_wrapp {
 		display: none;
 	}
 
 	.resp_call {
 		display: block;
 		position: relative;
-		top: 22px;
+		top: 1px;
 	}
 
 	/*-- /Header --*/
@@ -510,6 +510,7 @@ h2 {
 	.thumb_2 .icon_box {
 		height: 100%;
 		width: 110px;
+		margin: 0;
 		position: absolute;
 		top: 50%;
 		left: 42px;
@@ -645,10 +646,6 @@ h2 {
 	.logo p {
 	    font-size: 11px;
 	    line-height: 18px;
-	}
-
-	.resp_call {
-	    top: 16px;
 	}
 
 	/*-- /Header --*/
@@ -919,8 +916,8 @@ h2 {
 	}
 
 	.thumb_2 .icon_box img {
-	    max-height: 61px;
-	    max-width: 83px;
+		max-height: 49px;
+		max-width: 83px;
 	}
 
 	.thumb_2 .descript {
