@@ -293,34 +293,42 @@
 				</div>
 				<div class="info_box animate fadeInUp">
 					<div class="col col_top col_top_1">
-						<div class="thumbnails_2">
-							<div class="thumb_2">
+						<div class="thumbnails_2 tabs_links" data-tabs = "tabs">
+							<div class="thumb_2 tab_link">
+								<label for="tab_1"></label>
 								<div class="thumb_2_col_1">
-									<img src="img/insurance_1.png" alt="" />
+									<img class="link" src="img/insurance_1_brown.png" alt="" />
+									<img class="hover" src="img/insurance_1.png" alt="" />
 								</div>
 								<div class="thumb_2_col_2">
 									<p>Стабильные<br /> выплаты</p>
 								</div>
 							</div>							
-							<div class="thumb_2">
+							<div class="thumb_2 tab_link">
+								<label for="tab_2"></label>
 								<div class="icon_box">
-									<img src="img/calc.png" alt="" />
+									<img class="link" src="img/calc.png" alt="" />
+									<img class="hover" src="img/calc_yellow.png" alt="" />
 								</div>
 								<div class="descript">
 									<p>Удобство расчетов</p>
-								</div>								
+								</div>
 							</div>
-							<div class="thumb_2">
+							<div class="thumb_2 tab_link">
+								<label for="tab_3"></label>
 								<div class="icon_box">
-									<img src="img/conversation.png" alt="" />
+									<img class="link" src="img/conversation.png" alt="" />
+									<img class="hover" src="img/conversation_yellow.png" alt="" />
 								</div>
 								<div class="descript">
 									<p>Связь 24/7</p>
 								</div>								
 							</div>
-							<div class="thumb_2">
+							<div class="thumb_2 tab_link">
+								<label for="tab_4"></label>
 								<div class="icon_box">
-									<img src="img/insurance_2.png" alt="" />
+									<img class="link" src="img/insurance_2.png" alt="" />
+									<img class="hover" src="img/insurance_2_yellow.png" alt="" />
 								</div>
 								<div class="descript">
 									<p>100% расходов за наш счет</p>
@@ -330,10 +338,28 @@
 					</div>
 					<div class="col col_top col_top_2">
 						<div class="thumb_3 thumb_3_resp">
-							<img src="img/image_05.jpg" alt="" />
-							<div class="descript">
-								<h3>Стабильные выплаты</h3>
-								<p>Вы получаете зарплату на банковскую карту 2 раза в месяц, строго по графику.</p>
+							<img src="img/image_05.jpg" alt="" />								
+							<div class="descript" data-tab-content = "tabs">
+								<input type="radio" name="tabs" id="tab_1" />
+								<div class="inner">
+									<h3>Стабильные выплаты</h3>
+									<p>Вы получаете зарплату на банковскую карту 2 раза в месяц, строго по графику</p>
+								</div>
+								<input type="radio"  name="tabs" id="tab_2" />
+								<div class="inner">
+									<h3>Удобство расчетов</h3>
+									<p>Клиенты могут оплатить заказ как наличными, так и безналичным платежом через мобильное приложение, за счет чего вы получаете в 2 раза больше заказов.</p>
+								</div>
+								<input type="radio"  name="tabs" id="tab_3" />
+								<div class="inner">
+									<h3>Связь 24/7</h3>
+									<p>Автомобиль оборудован смартфоном с доступом в интернет и безлимитными звонками на любые местные номера.</p>
+								</div>
+								<input type="radio"  name="tabs" id="tab_4" />
+								<div class="inner">
+									<h3>100% расходов за наш счет</h3>
+									<p>Заправляем автомобиль, выполняем техническое обслуживание и мойку за счет компании, что избавляет вас от лишней суеты и непредвиденных трат.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -526,7 +552,7 @@
 								</div>
 								<div class="col_2">
 									<div class="yellow_box">
-										<p>Игорь, 49 лет.</p>
+										<p>Игорь, 29 лет.</p>
 									</div>
 									<div class="item_text before_item">
 										<h3>До</h3>
@@ -548,15 +574,15 @@
 								</div>
 								<div class="col_2">
 									<div class="yellow_box">
-										<p>Игорь 2, 49 лет.</p>
+										<p>Михаил, 50 лет.</p>
 									</div>
 									<div class="item_text before_item">
 										<h3>До</h3>
-										<p>Сервисный инженер, зарплата — 650 BYN. Работа связана с постоянными разъездами, график — ненормированный. За переработку не доплачивали, выплаты задерживали на 5-10 дней.</p>
+										<p>Работал кладовщиком в крупном распределительном центре. Зарплата устраивала, но каждый месяц вычитали до 30% за недостачи в коллективе (общая сумма делилась на всех). Таким образом, честный сотрудник расплачивался за недобросовестность коллег из своего кармана.</p>
 									</div>
 									<div class="item_text after_item">
 										<h3>После</h3>
-										<p>Поступил к нам на работу. Опыта в такси не было. Прошел обучение и в первый месяц выполнил более 700 заказов. Заработал в среднем 1400 BYN (не включая чаевые). Работает в компании более года.</p>
+										<p>Осознал, что работу надо менять. Знакомый посоветовал прийти к нам в такси. Сейчас Михаил — опытный водитель такси. Средний заработок — 1200 BYN в месяц без штрафов и каких-либо дополнительных расходов. Михаил всем доволен.</p>
 									</div>
 								</div>
 							</div>
@@ -570,15 +596,15 @@
 								</div>
 								<div class="col_2">
 									<div class="yellow_box">
-										<p>Игорь 3, 49 лет.</p>
+										<p>Евгений, 23 года.</p>
 									</div>
 									<div class="item_text before_item">
 										<h3>До</h3>
-										<p>Сервисный инженер, зарплата — 650 BYN. Работа связана с постоянными разъездами, график — ненормированный. За переработку не доплачивали, выплаты задерживали на 5-10 дней.</p>
+										<p>Менеджер по продажам стройматериалов с зарплатой 900-1200 BYN включая проценты. Евгений хотел зарабатывать больше, чтобы содержать молодую семью.</p>
 									</div>
 									<div class="item_text after_item">
 										<h3>После</h3>
-										<p>Поступил к нам на работу. Опыта в такси не было. Прошел обучение и в первый месяц выполнил более 700 заказов. Заработал в среднем 1400 BYN (не включая чаевые). Работает в компании более года.</p>
+										<p>Нужно было быстро принимать решение, и выбор пал на работу в такси на своем автомобиле. За 5 месяцев показал отличные результаты. В среднем выполнял 30-35 заказов в день и всегда получал от клиентов хорошие чаевые за вежливость, комфортное вождение и искреннее желание помочь. Сейчас Евгений зарабатывает до 3 раз больше, чем в магазине стройматериалов.</p>
 									</div>
 								</div>
 							</div>
@@ -609,7 +635,7 @@
 							<h3>Что делать в случае ДТП?</h3>
 						</div>
 						<div class="accordeon_item_descript">
-							<p>У нас нет аренды — вы получаете новый автомобиль на правах сотрудника компании. Платить ничего не нужно.</p>
+							<p>Все автомобили застрахованы по КАСКО. Вам необходимо связаться с нами, позвонить по горячей линии, указанной в страховке, и следовать указаниям консультанта.</p>
 						</div>
 					</div>
 					<div class="accordeon_item">
@@ -617,7 +643,7 @@
 							<h3>Могу я работать только по выходным?</h3>
 						</div>
 						<div class="accordeon_item_descript">
-							<p>У нас нет аренды — вы получаете новый автомобиль на правах сотрудника компании. Платить ничего не нужно.</p>
+							<p>Можете, у нас есть ограниченное число вакансий на выходной день. Или вы всегда можете работать качестве партнера на личном автомобиле. У нас одна из самых низких комиссий — всего 15%.</p>
 						</div>
 					</div>
 					<div class="accordeon_item">
@@ -625,7 +651,7 @@
 							<h3>Каков график работы водителей?</h3>
 						</div>
 						<div class="accordeon_item_descript">
-							<p>У нас нет аренды — вы получаете новый автомобиль на правах сотрудника компании. Платить ничего не нужно.</p>
+							<p>Стандартный график: 2 дневных смены с 10:00 до 22:00, 2 ночных с 22:00 до 10:00, 2 выходных. 3 часа в течение смены для отдыха. Если такой график не устраивает, можете работать в режиме 6/1 с выбором дневных или ночных смен.</p>
 						</div>
 					</div>
 					<div class="accordeon_item">
@@ -633,7 +659,7 @@
 							<h3>Оплачиваете ли вы больничные?</h3>
 						</div>
 						<div class="accordeon_item_descript">
-							<p>У нас нет аренды — вы получаете новый автомобиль на правах сотрудника компании. Платить ничего не нужно.</p>
+							<p>Да, мы предоставляем полный социальный пакет.</p>
 						</div>
 					</div>
 				</div>
@@ -761,10 +787,22 @@
 				<div class="input_wrapp">
 					<input type="tel" placeholder="Ваш телефон">
 				</div>
+				<div class="input_wrapp">
+					<input type="text" placeholder="Ваш Автомобиль">
+				</div>
+				<div class="input_wrapp">
+					<input type="text" placeholder="Год выпуска">
+				</div>
 				<div class="submit_wrapp">
 					<input type="submit" class="yellow_pill" value="оставить заявку">
 				</div>
 			</form>
+		</div>
+	</div>
+	<div class="popup popup_sect" data-popup = "popup_2">
+		<div class="popup_content">
+			<button type="button" class="close_popup"></button>
+			<h3>Спасибо ваша заявка отправлена</h3>
 		</div>
 	</div>
 	<!-- /Popups -->

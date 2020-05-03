@@ -13,6 +13,7 @@ g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 var parentBlock, dropdowmBlock;
+var tabsName, activeTab, activeTabLink;
 
 $(window).resize(function() {
     getAnimation();
@@ -74,7 +75,8 @@ $(document).ready(function() {
             autoplaySpeed: 4000,
             speed: 1200,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            fade: true
         });
     }
 
@@ -191,6 +193,30 @@ $(document).ready(function() {
               $("[data-popup]").fadeOut(300);
           }
         }
+    });
+
+    // ------------
+
+    $(".tab_link").on("click", function() {
+      parentBlock = $(this).closest(".tabs_links");
+      parentBlock.find(".tab_link").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    $("[data-tab-content]").each(function() {
+      tabsName = $(this).attr("data-tab-content");
+      $("[data-tabs = '"+tabsName+"'] .tab_link").each(function() {
+        if($(this).hasClass("active")) {
+          activeTab = $(this).find("label").attr("for");
+          return false;
+        } else {
+          parentBlock = $(this).closest(".tabs_links");
+          activeTab = parentBlock.find(".tab_link:eq(0) label").attr("for");
+        }
+      });
+      activeTabLink = $("[data-tabs = '"+tabsName+"'] [for = '"+activeTab+"']").closest(".tab_link");
+      activeTabLink.addClass("active");
+      $("#"+activeTab).prop("checked", true);
     });
 
 });

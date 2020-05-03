@@ -899,11 +899,6 @@ h2 {
 	    min-height: 80px;
 	    margin: 2px 0 !important;
 	    padding: 0 20px !important;
-	    background-color: #ccb995 !important;
-	}
-
-	.thumb_2:nth-child(1) {
-		background-color: #354258 !important;
 	}
 
 	.thumb_2_col_1 img {
@@ -942,7 +937,7 @@ h2 {
 	    display: -webkit-flex;
 	    align-items: center;
 	    -webkit-align-items: center;
-	    height: 190px;
+	    min-height: 190px;
 	    margin: 5px 0 1px 0;
 	    padding: 10px 20px;
 	}
