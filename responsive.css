@@ -534,6 +534,7 @@ h2 {
 		display: -webkit-flex;
 		align-items: center;
 		-webkit-align-items: center;
+		text-align: left;
 	    min-height: 100%;
 	    padding-left: 165px;
 	}
@@ -937,7 +938,7 @@ h2 {
 	    display: -webkit-flex;
 	    align-items: center;
 	    -webkit-align-items: center;
-	    min-height: 190px;
+	    min-height: 260px;
 	    margin: 5px 0 1px 0;
 	    padding: 10px 20px;
 	}

@@ -857,7 +857,7 @@ a:active {
 
 .resp_slider {
     display: none !important;
-    margin-top: 108px;
+    margin: 82px 0 26px 0;
 }
 
 .resp_slider .slide {
@@ -1409,6 +1409,7 @@ p.p_red {
 
 .thumb_2 .descript {
     min-height: 101px;
+    text-align: center;
 }
 
 .thumb_2 .descript p {
@@ -1689,7 +1690,7 @@ p.p_red {
 }
 
 .slider_2 .slick-dots {
-    margin-top: 52px;
+    margin-top: 40px;
 }
 
 .testimonial {
@@ -1748,6 +1749,10 @@ p.p_red {
 
 .item_text {
     padding: 5px 0;   
+}
+
+.before_item {
+    min-height: 240px;
 }
 
 .before_item h3 {
