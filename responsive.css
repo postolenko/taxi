@@ -83,11 +83,11 @@ p .price_val {
 }
 
 .logo > div:nth-child(1) {
-    width: 48px;
+    width: 60px;
 }
 
 .logo > div:nth-child(2) {
-    width: calc(100% - 48px);
+    width: calc(100% - 60px);
     padding: 13px 0 0 25px;
 }
 
